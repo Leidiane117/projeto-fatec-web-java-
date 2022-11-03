@@ -12,9 +12,9 @@
 %>
 
 <html>
-    <%@include file="../../inc/materalizeWeb.inc" %>
+    <%@include file="../../inc/materalizeWeb.inc"%>
     <title>LISTA CLIENTES</title>
-    <body>
+   
         <table class="striped responsive-table">
             <thead>
               <tr>
@@ -30,17 +30,17 @@
                <tbody>  
                     <% for (Cliente listaClientes : pess) { %>
                     <tr>
-                            <td><%=listaClientes .getId()%></td>
-                            <td><%=listaClientes .getNome()%></td>
-                            <td><%=listaClientes .getCelular()%></td>
-                            <td><%=listaClientes .getEmail()%></td>
+                            <td><%=listaClientes.getId()%></td>
+                            <td><%=listaClientes.getNome()%></td>
+                            <td><%=listaClientes.getCelular()%></td>
+                            <td><%=listaClientes.getEmail()%></td>
                             <td><a href="excluirCliente.jsp?<%=url + listaClientes.getId()%>">Excluir</a></td>
                             <td><a href="alterarCliente.jsp?<%=url + listaClientes.getId()%>">Alterar</a></td>
-                             %>
+                          
                         </tr>
                     <% } %>
                  </tbody>
             <% } %>
         </table>    
-    </body>
+   
 </html>

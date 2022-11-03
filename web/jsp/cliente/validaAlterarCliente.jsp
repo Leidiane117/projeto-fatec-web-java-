@@ -12,7 +12,6 @@
     Cliente pes = new Cliente(id,nome,celular,mail);
     ClienteController pesCont = new ClienteController();
     pes = pesCont.alterar(pes);
-    // REDIRECIONA PARA A PAG LOGIN.JSP
     String url = "validaConsultarCliente.jsp?NOME=" + pbusca;
     response.sendRedirect(url);
 %>

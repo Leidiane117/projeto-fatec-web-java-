@@ -1,0 +1,4 @@
+JavaJDK>=11
+Mysql conector=> 8.0.31.jar
+Apache Tomcat
+
